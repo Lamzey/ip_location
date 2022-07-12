@@ -1,5 +1,4 @@
-from ipaddress import ip_address
-import ipaddress
+import time
 import socket
 from turtle import color
 import geocoder
@@ -23,3 +22,12 @@ folium.Marker(location).add_to(map)
 map
 
 map.save("map.html")
+
+print("Would You Like To Proceed: ")
+
+ans = input()
+
+if ans == 'YES' or 'yes':
+    print("Thanks For Using My Software, Times Out In 10 sec")
+    time.sleep(10)
+else: time.sleep(10)
